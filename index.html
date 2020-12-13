@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="dist/demo.css" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+</head>
+
+<body>
+    <div class="grid">
+        <main>
+            <div id="container">
+                <video controls crossorigin playsinline
+                    data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player" autoplay>
+                    <!-- Video files -->
+                    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4"
+                        size="576" />
+                    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4"
+                        size="720" />
+                    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4"
+                        size="1080" />
+    
+                    <!-- Caption files -->
+                    <track kind="captions" label="English" srclang="en"
+                        src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
+                    <track kind="captions" label="Français" srclang="fr"
+                        src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
+                </video>
+            </div>
+        </main>
+    </div>
+<script src="dist/demo.js"></script>
+    <!-- <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script> -->
+</body>
+</html>
